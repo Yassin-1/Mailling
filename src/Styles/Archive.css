@@ -1,0 +1,23 @@
+/* Archive.css */
+
+.archive {
+  padding: 20px;
+  font-size: 14px;
+}
+.archive ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.archive li {
+  padding: 12px 8px;
+  color: #4B5563 ;
+}
+
+.archived{
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.archived :hover{
+  background-color: #D1E2FF;
+}

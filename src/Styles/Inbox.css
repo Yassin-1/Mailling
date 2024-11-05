@@ -1,0 +1,92 @@
+.inbox {
+  padding: 20px;
+  font-size: 14px;
+}
+
+.inbox ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.email-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E5E7EB;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.email-item:hover{
+  display: flex !important; 
+  background-color: #D1E2FF !important;
+}
+
+.email-item.unread {
+  background-color: #F3F6FB;
+  font-weight: 500;
+  color: #121829;
+  display: flex;
+  gap: 8px;
+}
+
+.email-item.read {
+  background-color: #ffffff; 
+  color: #4B5563;
+  display: flex;
+  gap: 8px;
+}
+
+.email-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: flex-end;
+}
+
+.email-detail {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #4B5563;
+  cursor: pointer;
+}
+
+.inbox li {
+  display: flex;
+  align-items: center;
+}
+
+.mail{
+  display: flex;
+}
+
+.Btns button {
+  padding: 5px 10px;
+  background-color: #f0f2f5;
+  color: #4B5563 ;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actionBtns{
+  display: flex;
+  gap: 8px;
+}
+
+.Btns{
+display: flex;
+justify-content: space-between;
+}
