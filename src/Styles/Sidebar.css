@@ -1,32 +1,20 @@
-/* Sidebar.css */
 .sidebar {
     width: 200px;
     padding: 20px;
-    background-color: #f0f2f5;
+    background-color: #F8FAFC;
     display: flex;
     flex-direction: column;
+    border-right: 1px solid #E5E7EB;
   }
-  
-  .sidebar-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    font-size: 14px;
-    cursor: pointer;
+
+  .logo{
+    width: 100%;
+    padding: 0px 0px 32px 0px;
   }
-  
-  .badge {
-    background-color: #e0e0e0;
-    border-radius: 12px;
-    padding: 2px 8px;
-    font-size: 12px;
-  }
-  
+
   .logout {
     margin-top: auto;
     font-size: 14px;
-    color: #007bff;
   }
   
   .sidebar-item{
@@ -49,6 +37,16 @@
     font-weight: 500;
     color: #121829;
   }
+
+  .sidebar-item svg path{
+    stroke: #4B5563;
+    /* filter: invert(32%) sepia(11%) saturate(653%) hue-rotate(176deg) brightness(100%) contrast(97%); */
+  }
+
+  .sidebar-item.active svg path{
+    stroke: #121829;
+    /* filter: invert(5%) sepia(88%) saturate(820%) hue-rotate(197deg) brightness(98%) contrast(93%); */
+  }
   
   .count {
     background-color: #007bff;
@@ -58,4 +56,25 @@
     font-size: 14px;
   }
 
+  .inbox-tab{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }  
 
+  .archive-tab{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logout-tab{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logout-tab svg path{
+    stroke: #4B5563;
+    /* filter: invert(32%) sepia(11%) saturate(653%) hue-rotate(176deg) brightness(100%) contrast(97%);; */
+  }
